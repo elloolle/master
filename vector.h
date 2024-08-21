@@ -149,10 +149,10 @@ vector operator*(const vector& v1, const vector& v2){
     }
     return copy;
 }
-vector operator*(const vector& v, double k){
+/*vector operator*(const vector& v, double k){
     vector copy(v);
     return copy*=k;
-}
+}*/
 double operator,(const vector& v1, const vector& v2){
     if(v1.dim!=v2.dim){
         throw std::invalid_argument("Vectors are must be same dimension");
