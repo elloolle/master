@@ -129,7 +129,7 @@ vector operator+(const vector& v1, const vector& v2){
     }
     return vector(v1.dim,arr);
 }
-vector operator-(const vector& v1, const vector& v2){
+/*vector operator-(const vector& v1, const vector& v2){
     if(v1.dim!=v2.dim){
         throw std::invalid_argument("Vectors are must be same dimension");
     }
@@ -138,7 +138,7 @@ vector operator-(const vector& v1, const vector& v2){
         arr[i]=v1.arr[i]-v2.arr[i];
     }
     return {v1.dim,arr};
-}
+}*/
 vector operator*(const vector& v1, const vector& v2){
     if((v1).dim!=3||v2.dim!=3){
         throw std::invalid_argument("Vectors dimension are must be 3");
